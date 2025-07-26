@@ -58,8 +58,8 @@ let effect;
 
 let characters = ' .:-+*=%@#'
 const effectSize = { amount: .205 }
-let backgroundColor = 'black'
-let ASCIIColor = 'white'
+let backgroundColor = 'white'
+let ASCIIColor = 'black'
 
 function createEffect() {
     effect = new AsciiEffect(renderer, characters, { invert: true, resolution: effectSize.amount });
@@ -122,7 +122,7 @@ stlLoader.load(
 
         tick()
 
-        document.getElementById('file-selector').addEventListener('change', openFile, false);
+        /*document.getElementById('file-selector').addEventListener('change', openFile, false);
 
 
         function openFile(evt) {
@@ -151,15 +151,15 @@ stlLoader.load(
                 myMesh.position.y = ((bbox.max.z - bbox.min.z) / 6)
 
                 scene.add(myMesh);
-            };
+            };*/
         };
     }
 )
 
 
-document.getElementById('screenshotButton').addEventListener('click', takeScreenshot);
+//document.getElementById('screenshotButton').addEventListener('click', takeScreenshot);
 
-function takeScreenshot() {
+/*function takeScreenshot() {
     var container = document.body; // full page 
     html2canvas(container).then(function (canvas) {
 
@@ -171,15 +171,15 @@ function takeScreenshot() {
         // link.target = '_blank';
         link.click();
     });
-}
+}*/
 
-document.getElementById('rotateButton').addEventListener('click', rotateMode);
+//document.getElementById('rotateButton').addEventListener('click', rotateMode);
 
 function rotateMode() {
     rotateModel = !rotateModel
 }
 
-document.getElementById('updateASCII').addEventListener('click', updateASCII);
+/*document.getElementById('updateASCII').addEventListener('click', updateASCII);
 
 function updateASCII() {
 
@@ -194,9 +194,9 @@ function updateASCII() {
 
     controls = new OrbitControls(camera, effect.domElement)
 
-}
+}*/
 
-document.getElementById('resetASCII').addEventListener('click', resetASCII);
+/*document.getElementById('resetASCII').addEventListener('click', resetASCII);
 
 function resetASCII() {
 
@@ -210,9 +210,9 @@ function resetASCII() {
     document.body.appendChild(effect.domElement)
 
     controls = new OrbitControls(camera, effect.domElement)
-}
+}*/
 
-document.getElementById('lightDark').addEventListener('click', lightDark);
+/*document.getElementById('lightDark').addEventListener('click', lightDark);
 
 function lightDark() {
     lightMode = !lightMode
@@ -235,7 +235,7 @@ function lightDark() {
         effect.domElement.style.color = ASCIIColor;
         effect.domElement.style.backgroundColor = backgroundColor;
     }
-}
+}*/
 
 window.addEventListener('resize', onWindowResize);
 
@@ -260,7 +260,7 @@ function download(filename, text) {
     document.body.removeChild(element);
 }
 
-document.getElementById("copyASCII").addEventListener("click", function () {
+/*document.getElementById("copyASCII").addEventListener("click", function () {
     var text = document.getElementsByTagName("table")[0].innerText
     var filename = "ASCII.txt";
 
@@ -275,4 +275,4 @@ document.getElementById("clipboardASCII").addEventListener("click", function () 
     document.execCommand('copy');
     document.body.removeChild(textArea);
     window.alert("ASCII copied to clipboard");
-}, false);
+}, false);*/
