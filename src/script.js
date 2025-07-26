@@ -6,13 +6,13 @@ import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect.js';
 import html2canvas from 'html2canvas';
 
 //LightMode
-let lightMode = true
+let lightMode = false
 
 //Create a clock for rotation
 const clock = new THREE.Clock()
 
 // Set rotate boolean variable
-let rotateModel = false
+let rotateModel = true
 
 //Ugh, don't ask about this stuff
 var userUploaded = false
