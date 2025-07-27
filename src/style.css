@@ -10,7 +10,7 @@ body
 
 {
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     text-align: center; 
  
 }
@@ -33,13 +33,6 @@ form {
     left: 0%;
     top: 0%;
     }
-
-#kofi {
-    text-align: left;  
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
 
 input[type="button"] {
   color: black;
